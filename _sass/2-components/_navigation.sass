@@ -1,0 +1,79 @@
+/* Navigation Section Styling */
+
+header
+  position: fixed
+  z-index: 2000
+  width: 100%
+  max-width: 100%
+  height: calc(.25rem + 80px)
+  background: $background-color
+
+.header-gradient-bar
+  position: relative
+  z-index: 2000
+  width: 100%
+  max-width: 100%
+  height: .25rem
+  background: $gradient-sunset
+
+.navigation-container
+  position: relative
+  z-index: 2000
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background: $background-color
+  height: 80px
+  padding: 0 20px
+
+.navigation-brand-wrapper
+  a
+    text-decoration: none
+    color: $primary-text-color
+
+.navigation-menu-wrapper
+  display: flex
+  flex-direction: row
+  cursor: pointer
+
+.menu-icon
+  height: 2rem
+  width: auto
+  padding-left: .5rem
+  path
+    fill: $primary-text-color
+
+.navigation-links-wrapper
+  position: relative
+  transform: translateY(-100%)
+  transition: $primary-transition
+  opacity: 0
+  width: 100%
+  max-width: 100%
+  background: $background-color-alt
+  z-index: -1000
+  ul
+    list-style: none
+    padding: 2rem 0
+    margin: 0
+    text-align: center
+    li
+      margin-bottom: 1rem
+
+.navigation-links-wrapper.open
+  opacity: 1
+  transform: translateY(0)
+  z-index: 1999
+
+.navigation-link
+  font-size: 1.75rem
+  text-decoration: none
+  color: $secondary-text-color
+
+
+/* Media Queries */
+
+@media screen and (min-width: $tablet-breakpoint)
+  .navigation-container
+    padding: 0 10%
