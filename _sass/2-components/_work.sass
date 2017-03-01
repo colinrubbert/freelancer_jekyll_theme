@@ -1,0 +1,73 @@
+/* Work Section Styling */
+
+section#work
+  width: 100%
+  max-width: 100%
+
+.work-items-wrapper
+  width: 100%
+  max-width: 100%
+  display: flex
+  flex-direction: column
+
+.work-item-link-wrapper
+  height: 18rem
+  background-size: cover
+  background-position: 50% 50%
+  width: 100%
+  max-width: 100%
+  text-decoration: none
+
+.work-item-title
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: 100%
+  background: $gradient-messenger
+  color: $secondary-text-color
+  opacity: 0
+  transition: $primary-transition
+  &:hover
+    opacity: 1
+
+.work-statistics-wrapper
+  display: flex
+  flex-direction: column
+  padding: 4rem 20px
+  text-align: center
+
+.work-stat
+  width: 100%
+  max-width: 100%
+  margin-bottom: 2rem
+  h2
+    margin-bottom: 0
+  p
+    margin-top: 0.5rem
+
+.work-stat:last-child
+  margin-bottom: 0
+
+
+/* Media Queries */
+
+@media screen and (min-width: $tablet-breakpoint)
+  .work-items-wrapper
+    flex-direction: row
+    justify-content: flex-start
+
+  .work-item-link-wrapper
+    width: 33.3333%
+    max-width: 33.3333%
+
+  .work-statistics-wrapper
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding: 4rem 10%
+
+  .work-stat
+    width: 25%
+    max-width: 25%
