@@ -1,0 +1,38 @@
+/* Contact Section Styling */
+
+section#contact
+  display: flex
+  flex-direction: column
+  align-content: center
+  width: 100%
+  max-width: 100%
+  background: $gradient-lemon
+  color: $secondary-text-color
+  padding: 4rem 20px
+  h2
+    text-align: center
+  form
+    input
+      width: 100%
+
+.contact-button
+  padding: 5px 20px
+  border: none
+  border-radius: 3px
+  font-weight: 300
+  letter-spacing: 2px
+  color: $secondary-text-color
+  background: $gradient-firewatch
+  cursor: pointer
+  box-shadow: $box-shadow
+
+
+/* Media Queries */
+
+@media screen and (min-width: $tablet-breakpoint)
+  section#contact
+    padding: 4rem 10%
+
+@media screen and (min-width: $desktop-breakpoint)
+  section#contact
+    padding: 4rem 30%
