@@ -3,21 +3,35 @@
 section#services
   width: 100%
   max-width: 100%
+  padding: 0 20px
 
 .services-wrapper
+  width: 100%
+  max-width: 100%
   display: flex
   flex-direction: column
-
-.services-item-wrapper
-  display: flex
-  flex-direction: row
-  padding: 20px
-
-.service-icon
-  height: 100%
-  width: 40%
-  margin-right: 1rem
+  padding: 4rem 0
 
 .service-item
-  height: 100%
-  width: auto
+  width: 100%
+  max-width: 100%
+  margin-bottom: 2rem
+
+.service-item:nth-last-child(1)
+  margin-bottom: 0
+
+
+/* Media Queries */
+
+@media screen and (min-width: $tablet-breakpoint)
+  section#services
+    padding: 0 10%
+
+  .services-wrapper
+    flex-direction: row
+    justify-content: space-between
+
+  .service-item
+    width: 30%
+    max-width: 30%
+    margin-bottom: 0
