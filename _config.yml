@@ -15,26 +15,26 @@
 # in the templates via {{ site.myvariable }}.
 
 # Site Configuration
-title: James Bond - Freelancer Developer Designer
-email: james.bond@example.com
-description: James Bond is a badass secret agent that also does freelance web design and web development. Started out to pass the time between missions it grew into a life of it's own.
+title: Roger Moore - Freelancer Developer Designer
+email: Roger.Moore@example.com
+description: Roger Moore is an actor that also does freelance web design and web development. Started out to pass the time between missions it grew into a life of it's own.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://awesomewebsite.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Information
-name: James Bond
+name: Roger Moore
 
 # Hero Section
 hero_image: "/assets/images/hero.jpg"
 hero_header: "I'm a freelance developer"
 
 # Social Media Configuration
-twitter_username: jamesbond
-github_username:  jamesbond
-dribbble_username: jamesbond
-facebook_username: jamesbond
-linkedin_username: jamesbond
-instagram_username: jamesbond
+twitter_username: rogermoore
+github_username:  rogermoore
+dribbble_username: rogermoore
+facebook_username: rogermoore
+linkedin_username: rogermoore
+instagram_username: rogermoore
 
 # Build settings
 sass:

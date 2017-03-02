@@ -19,12 +19,18 @@ section#contact
   padding: 5px 20px
   border: none
   border-radius: 3px
+  font-size: 1.25rem
   font-weight: 300
   letter-spacing: 2px
   color: $secondary-text-color
   background: $gradient-firewatch
   cursor: pointer
   box-shadow: $box-shadow
+  transition: $primary-transition
+  &:hover
+    color: darken($secondary-text-color, 10%)
+    box-shadow: none
+    opacity: .95
 
 
 /* Media Queries */
