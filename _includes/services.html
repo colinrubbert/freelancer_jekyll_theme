@@ -3,19 +3,12 @@
 <section id="services">
   <div class="services-wrapper">
 
+    {% for service in site.data.services %}
       <div class="service-item">
-        <h2 class="service-title">Web App Development</h2>
-        <p class="service-description">Sed fermentum, ante vitae rhoncus ullamcorper, velit massa blandit elit, ac efficitur metus purus tristique nisl. Quisque condimentum auctor risus.</p>
+        <h2 class="service-title">{{ service.title }}</h2>
+        <p class="service-description">{{ service.description }}</p>
       </div>
-
-      <div class="service-item">
-        <h2 class="service-title">Responsive Design</h2>
-        <p class="service-description">In hac habitasse platea dictumst. Mauris ullamcorper orci elementum nulla lacinia, vel pulvinar odio scelerisque. Sed.</p>
-      </div>
-
-      <div class="service-item">
-        <h2 class="service-title">Pixel Perfect Design</h2>
-        <p class="service-description">Nulla euismod odio quam, sed tempus neque porta sit amet. Suspendisse pretium urna id ultrices tincidunt. Cras egestas, diam vel commodo tristique, lacus purus faucibus orci.</p>
-      </div>
+    {% endfor %}
+    
   </div>
 </section>

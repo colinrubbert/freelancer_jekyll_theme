@@ -1,0 +1,26 @@
+<!-- Blog Section -->
+
+<section id="blog">
+
+
+  <div class="blog-index-wrapper">
+    <h1 class="section-header">Blog</h1>
+
+    {% for post in site.posts %}
+      <div class="blog-index-item">
+        <a href="{{ post.url }}" class="blog-title">
+          <h2>{{ post.title }}</h2>
+        </a>
+
+        <p class="blog-excerpt">
+          {{ post.content | strip_html | truncatewords: 60 }}
+          <a href="{{ post.url }}">
+            <p>Read More ...</p>
+          </a>
+        </p>
+      </div>
+    {% endfor %}
+
+  </div>
+
+</section>

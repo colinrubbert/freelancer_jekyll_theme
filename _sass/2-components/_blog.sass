@@ -1,0 +1,34 @@
+/* Blog Styling */
+
+section#blog
+  position: relative
+  padding: 0rem 20px
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  max-width: 100%
+  background: $gradient-sky
+
+.blog-index-wrapper
+  margin: 20px auto
+
+.blog-index-item
+  margin-bottom: 3rem
+
+.blog-title
+  text-decoration: none
+  h2
+    font-size: 1.75rem
+
+/* Media Queries */
+
+@media screen and (min-width: $tablet-breakpoint)
+  section#blog
+    padding: 0rem 10%
+
+@media screen and (min-width: $desktop-breakpoint)
+  section#blog
+    padding: 0rem 20%

@@ -5,16 +5,21 @@
 <html lang="en">
   {% include head.html %}
   <body>
+    {% include navigation.html %}
 
-    <div class="post-wrapper">
-      <h1>{{ page.title }}</h1>
+      <section id="post">
+        <div class="post-wrapper">
+          <h1>{{ page.title }}</h1>
 
-      {{ content }}
+          {{ content }}
 
-      <div class="post-disqus-wrapper">
+          <div class="post-disqus-wrapper">
 
-      </div>
-    </div>
+          </div>
+        </div>
+      </section>
 
+    {% include footer.html %}
+    {% include js.html %}
   </body>
 </html>

@@ -17,21 +17,12 @@
     </div>
 
     <div class="work-statistics-wrapper">
-      <div class="work-stat">
-        <h2>10+</h2>
-        <p>Thrilled Customers</p>
-      </div>
-      <div class="work-stat">
-        <h2>1500+</h2>
-        <p>Code Commits</p>
-      </div>
-      <div class="work-stat">
-        <h2>100+</h2>
-        <p>Problems Solved</p>
-      </div>
-      <div class="work-stat">
-        <h2>$1,000,000+</h2>
-        <p>Client Revenue Saved</p>
-      </div>
+      {% for work in site.data.works %}
+        <div class="work-stat">
+          <h2>{{ work.stat-number }}</h2>
+          <p>{{ work.stat-description }}</p>
+        </div>
+      {% endfor %}
     </div>
+    
 </section>

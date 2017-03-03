@@ -1,0 +1,14 @@
+## Services
+#
+# Add/Adjust your services.
+# Services will include a 'Title' & 'Description'.
+#
+
+- title: Web App Development
+  description: Sed fermentum, ante vitae rhoncus ullamcorper, velit massa blandit elit, ac efficitur metus purus tristique nisl. Quisque condimentum auctor risus.
+
+- title: Responsive Design
+  description: In hac habitasse platea dictumst. Mauris ullamcorper orci elementum nulla lacinia, vel pulvinar odio scelerisque. Sed.
+
+- title: Pixel Perfect Design
+  description: Nulla euismod odio quam, sed tempus neque porta sit amet. Suspendisse pretium urna id ultrices tincidunt. Cras egestas, diam vel commodo tristique, lacus purus faucibus orci.
