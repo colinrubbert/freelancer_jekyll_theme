@@ -1,0 +1,12 @@
+<!-- Footer Section -->
+
+<footer>
+  <div class="copyright">&copy; {{ site.name }} {{ site.time | date: '%Y' }}</div>
+  <div class="social-wrapper">
+    {% for social in site.data.socials %}
+      <a href="{{ social.url }}{{ social.username }}" class="social-media-link" target="_blank">
+        {{ social.svg }}
+      </a>
+    {% endfor %}
+  </div>
+</footer>

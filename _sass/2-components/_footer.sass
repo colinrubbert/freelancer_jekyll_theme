@@ -1,0 +1,40 @@
+/* Footer Styling */
+
+footer
+  min-height: 80px
+  width: 100%
+  max-width: 100%
+  padding: 2rem 20px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.copyright
+  text-align: center
+  margin-bottom: 2rem
+
+.social-wrapper
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+
+.social-media-link
+  svg
+    height: 1.5rem
+    width: auto
+
+/* Media Queries */
+
+@media screen and (min-width: $tablet-breakpoint)
+  footer
+    padding: 0 10%
+    flex-direction: row
+    align-items: center
+
+  .copyright
+    text-align: left
+    margin-bottom: 0
+
+  .social-wrapper
+    width: 20%
+    max-width: 20%
